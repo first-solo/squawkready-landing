@@ -1,0 +1,206 @@
+/* Reset and base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #0f172a;
+  --color-text: #334155;
+  --color-text-light: #64748b;
+  --color-background: #ffffff;
+  --color-background-alt: #f8fafc;
+  --color-accent: #10b981;
+  --font-family: 'Exo 2', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  line-height: 1.6;
+  background-color: var(--color-background);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #1e293b 100%);
+  color: white;
+  padding: 100px 24px 120px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Features Section */
+.features {
+  padding: 80px 24px;
+  background: var(--color-background-alt);
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 48px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.feature {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.feature-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--color-primary);
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin-bottom: 12px;
+}
+
+.feature p {
+  color: var(--color-text-light);
+  font-size: 0.975rem;
+}
+
+/* Signup Section */
+.signup {
+  padding: 80px 24px;
+  text-align: center;
+  background: white;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 16px;
+}
+
+.signup > .container > p {
+  color: var(--color-text-light);
+  font-size: 1.125rem;
+  margin-bottom: 32px;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-placeholder {
+  background: var(--color-background-alt);
+  border: 2px dashed #e2e8f0;
+  border-radius: 8px;
+  padding: 40px;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-secondary);
+  color: #94a3b8;
+  padding: 32px 24px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 24px 80px;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .features h2,
+  .signup h2 {
+    font-size: 1.5rem;
+  }
+
+  .features,
+  .signup {
+    padding: 60px 24px;
+  }
+}
