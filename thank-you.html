@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - SquawkReady</title>
+  <meta name="description" content="Thank you for signing up for SquawkReady updates.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .thank-you {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--color-secondary) 0%, #1e293b 100%);
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+    .thank-you-content {
+      max-width: 600px;
+    }
+    .thank-you .logo {
+      font-size: 2.5rem;
+      margin-bottom: 32px;
+    }
+    .thank-you-icon {
+      width: 80px;
+      height: 80px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+    .thank-you-icon svg {
+      width: 40px;
+      height: 40px;
+      color: white;
+    }
+    .thank-you h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .thank-you p {
+      font-size: 1.125rem;
+      color: #cbd5e1;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .back-link {
+      display: inline-block;
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <section class="thank-you">
+    <div class="thank-you-content">
+      <h2 class="logo">SquawkReady</h2>
+      <div class="thank-you-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </div>
+      <h1>Thank You!</h1>
+      <p>We appreciate you signing up. We'll keep you updated on our progress and let you know as soon as SquawkReady is ready for takeoff. We look forward to serving you in the future.</p>
+      <a href="/" class="back-link">&larr; Back to home</a>
+    </div>
+  </section>
+</body>
+</html>
